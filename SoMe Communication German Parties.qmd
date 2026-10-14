@@ -1,0 +1,28 @@
+---
+title: "SoMe Communication German Parties"
+subtitle: "Using partySOME data to explore German Party Activities on Social Media"
+author: "Stefan Höller"
+date: today
+format:
+  html:
+    toc: true
+    code-copy: true
+    embed-resources: true
+  typst: default
+execute:
+  warning: false
+  message: false
+---
+
+## Getting started
+
+
+```{r}
+#| label: setup
+#| eval: false
+if (!require(pacman)) install.packages("pacman")
+p_load(tidyverse, rio)
+
+# data from partySOME
+data_coverage <- import("data/partysome_ii_coverage_status_v1.0.csv")
+```
